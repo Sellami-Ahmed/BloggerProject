@@ -7,7 +7,7 @@ require_once __DIR__ . '/../config/Config.php';
 $db = Config::getDB();
 
 $id = $_GET["id"];
-require_once __DIR__ . "\..\controller\UserC.php";
+require_once __DIR__ . "/../controller/UserC.php";
 $isAdmin = isAdmin($id);
 $Admin = isAdmin(1);
 if ($isAdmin == $Admin && $id != 1) {
